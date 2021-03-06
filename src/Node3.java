@@ -31,20 +31,18 @@ class Main
         System.out.println("null");
     }
  
-    // Takes two lists sorted in increasing order and merge their nodes
-    // to make one big sorted list, which is returned
+    
     public static Node3 sortedMerge(Node3 a, Node3 b)
     {
-        // a dummy first node to hang the result on
+        
         Node3 dummy = new Node3();
  
-        // points to the last result node — so `tail.next` is the place
-        // to add new nodes to the result.
+        
         Node3 tail = dummy;
  
         while (true)
         {
-            // if either list runs out, use the other list
+            
             if (a == null)
             {
                 tail.next = b;
